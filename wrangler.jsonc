@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "freemathapp",
+  "pages_build_output_dir": "./web/dist",
+  "compatibility_date": "2026-05-03",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "freemath-db",
+      "database_id": "e725cd46-34b9-4667-b709-4ef1b7a21983"
+    }
+  ]
+}
