@@ -13,9 +13,14 @@
     "cf:d1:init": "wrangler d1 execute freemath-db --remote --file migrations/0001_leaderboard.sql && wrangler d1 execute freemath-db --remote --file migrations/0002_rating_fields.sql",
     "cf:d1:migrate:rating": "wrangler d1 execute freemath-db --remote --file migrations/0002_rating_fields.sql",
     "cf:deploy": "pnpm build && wrangler pages deploy web/dist",
-    "cf:preview": "pnpm build && wrangler pages deploy web/dist --branch preview"
+    "cf:preview": "pnpm build && wrangler pages deploy web/dist --branch preview",
+    "test": "pnpm --filter @math/web exec tsc -b"
   },
   "devDependencies": {
     "wrangler": "^4.87.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/math.git"
   }
 }
